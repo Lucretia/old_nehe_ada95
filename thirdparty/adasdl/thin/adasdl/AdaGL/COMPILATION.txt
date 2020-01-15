@@ -1,0 +1,8 @@
+
+Windows:
+	Make conf2w32
+	Make all
+
+Linux:
+	Make conf2x11
+	Make all

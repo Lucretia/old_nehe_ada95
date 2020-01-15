@@ -1,0 +1,68 @@
+---------------------------------------------------------------------------------
+-- Copyright 2004-2007 © Luke A. Guest
+--
+-- This code is to be used for tutorial purposes only.
+-- You may not redistribute this code in any form without my express permission.
+---------------------------------------------------------------------------------
+project NeHe_Base_Ada is
+
+  type Build_Type is ("release", "debug");
+  type Platform_Type is ("linux", "win32");
+  
+  Build    : Build_Type    := external("BUILD", "debug");
+  Platform : Platform_Type := external("PLATFORM", "linux");
+  
+  for Source_Dirs use
+    ("../../nehe_base_ada/",
+     "../../adagl/" & Platform,
+     "../../thirdparty/adasdl/thin/adasdl/AdaSDL/binding/");
+
+  for Source_Files use
+    ("nehe_base_ada.adb",
+     "example.adb",
+
+     "gl.ads",
+     "glu.ads",
+
+     "sdl.ads",
+     "sdl-video.adb",
+     "sdl-active.ads",
+     "sdl-events.adb",
+     "sdl-keyboard.adb",
+     "sdl-keysym.ads",
+     "sdl-timer.ads",
+     "sdl-types.adb",
+     "sdl-mutex.adb",
+     "sdl-rwops.adb",
+     "sdl-joystick.ads",
+     "sdl-mouse.adb",
+     "uintn_ptrops.ads",
+     "lib_c.ads");
+    
+  for Object_Dir use "./" & Platform & "/" & Build;
+  
+  for Exec_Dir use "./" & Platform & "/" & Build;
+  
+  for Main use ("nehe_base_ada");
+
+  package Compiler is
+    case Build is
+      when "debug" =>
+        for Default_Switches("Ada") use
+          ("-gnata",
+           "-gnato",
+           "-gnatE",
+           "-v",
+           "-g");
+           
+      when "release" =>
+        for Default_Switches("Ada") use
+          ("-O2");
+    end case;
+  end Compiler;
+
+  package Builder is
+    for Executable ("nehe_base_ada.adb") use "nehe_base_ada";
+  end Builder;
+
+end NeHe_Base_Ada;

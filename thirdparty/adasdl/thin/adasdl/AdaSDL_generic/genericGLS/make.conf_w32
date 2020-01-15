@@ -1,0 +1,3 @@
+LIBS= -lSDL_mixer -lSDL -lopengl32 -lglu32  
+#-mwindows
+EXE=.exe

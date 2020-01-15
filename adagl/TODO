@@ -1,0 +1,35 @@
+* Change the package hierarchy to:
+
+  gl.ads       - The thick bindings to OpenGL
+  gl-c.ads     - The C interface, i.e. thin bindings to OpenGL
+  gl-ext.ads   - The thick bindings to OpenGL Extensions
+  gl-ext-c.ads - The C interface, i.e. thin bindings to OpenGL Extensions
+  glu.ads      - The thick bindings to GLU
+  glu-c.ads    - The C interface, i.e. thin bindings to GLU
+  glut.ads     - The thick bindings to GLUT
+  glut-c.ads   - The C interface, i.e. thin bindings to GLUT
+  glx.ads      - The thick bindings to GLX
+  glx-c.ads    - The C interface, i.e. thin bindings to GLX
+  wgl.ads      - The thick bindings to WGL
+  wgl-c.ads    - The C interface, i.e. thin bindings to WGL
+
+  This way AdaGL can export both a thin and thick set of bindings which the user can select which set of bindings to use.
+
+* Take the support to OpenGL 1.5.
+
+* Add support for Cg.
+
+* Add support for GLSL.
+
+* Port the red book samples.
+
+* Add lib linking pragmas to their own packages in their own directories, e.g.
+
+  linux/gnat/gl-link.ads
+  win32/gnat/gl-link.ads
+  win32/objectada/gl-link.ads
+  etc.
+
+  This needs to be done on a per library basis, GL, GLU, GLUT, etc.
+
+* Move the import pragma's to a separate package, e.g. Win32 requires DLL linkage and Linux requires C linkage.

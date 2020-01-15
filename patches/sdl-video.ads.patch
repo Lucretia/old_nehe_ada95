@@ -1,0 +1,19 @@
+*** sdl-video.ads.orig	Sat Jul  3 22:49:40 2004
+--- sdl-video.ads	Sun Jun 27 16:46:59 2004
+***************
+*** 1351,1357 ****
+  
+  
+     --  Get the address of a GL function (for extension functions)
+!    procedure GL_GetProcAddress (proc : C.Strings.chars_ptr);
+     pragma Import (C, GL_GetProcAddress, "SDL_GL_GetProcAddress");
+  
+  
+--- 1351,1357 ----
+  
+  
+     --  Get the address of a GL function (for extension functions)
+!    function GL_GetProcAddress (proc : C.Strings.chars_ptr) return System.Address;
+     pragma Import (C, GL_GetProcAddress, "SDL_GL_GetProcAddress");
+  
+  

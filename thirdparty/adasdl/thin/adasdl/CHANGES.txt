@@ -1,0 +1,10 @@
+
+Small corrections.
+
+Simplified installation under Windows and Linux.
+
+New directory structure preparing for new developments.
+    AdaSDL will be part of something called "Ada Media Kit".
+    
+New extra binding to SDL_ttf  enabling the use of truetype fontes
+under AdaSDL.

@@ -1,0 +1,27 @@
+
+Go to direcrory AdaSDL
+        AdaSDL_W32_support_files
+	  |
+	  +->devels
+	  |    |
+	  |    +->libs   Files to put in "gnat/lib"
+	  |    |         or in other "lib" directory
+	  |    |         visible to the compiler.
+          |    |
+	  |    +->bin    Files to put in a directory
+	  |              visible to the compiler like "gnat/bin".
+	  |              Or in a directory in the system path.
+	  |     
+	  |     
+	  +->runtime
+	       |
+	       +->bin   Put this files in  your applications
+	                directory or in c:\windows\system
+
+
+   *    make conf2w32     To   prepare de system for
+	                  compilation under Windows
+	
+   *	make all          to compile everything
+	or
+	make libs         to compile only the binding code

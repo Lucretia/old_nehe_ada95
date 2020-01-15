@@ -1,0 +1,12 @@
+
+Go to direcrory AdaSDL
+
+   *    Find and install runtime and development files for
+        SDL SDL_image SDL_mixer SDL_ttf libfreetype2 libsmpeg
+	available for you distribution.
+
+   *    make conf2x11     to   prepare de system for compilation under Linux
+	
+   *    make all          to compile everything
+        or
+        make libs         to compile only the binding code

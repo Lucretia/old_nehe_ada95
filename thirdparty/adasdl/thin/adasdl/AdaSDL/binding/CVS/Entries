@@ -1,0 +1,42 @@
+/IMPL_NOTES.txt/1.1.1.1/Fri Aug 30 01:12:05 2002//
+/Makefile/1.1.1.1/Fri Aug 30 01:12:05 2002//
+/TO_DO.txt/1.1.1.1/Fri Aug 30 01:12:05 2002//
+/compile.adb/1.1.1.1/Fri Aug 30 01:12:05 2002//
+/lib_c.ads/1.1.1.1/Fri Aug 30 01:12:06 2002//
+/sdl-active.ads/1.1.1.1/Fri Aug 30 01:12:07 2002//
+/sdl-audio-extra.ads/1.1.1.1/Fri Aug 30 01:12:09 2002//
+/sdl-audio.adb/1.1.1.1/Fri Aug 30 01:12:10 2002//
+/sdl-audio.ads/1.1.1.1/Fri Aug 30 01:12:15 2002//
+/sdl-byteorder-extra.ads/1.1.1.1/Fri Aug 30 01:12:15 2002//
+/sdl-byteorder.adb/1.1.1.1/Fri Aug 30 01:12:17 2002//
+/sdl-byteorder.ads/1.1.1.1/Fri Aug 30 01:12:18 2002//
+/sdl-cdrom.adb/1.1.1.1/Fri Aug 30 01:12:20 2002//
+/sdl-cdrom.ads/1.1.1.1/Fri Aug 30 01:12:22 2002//
+/sdl-error.adb/1.1.1.1/Fri Aug 30 01:12:23 2002//
+/sdl-error.ads/1.1.1.1/Fri Aug 30 01:12:25 2002//
+/sdl-events.adb/1.1.1.1/Fri Aug 30 01:12:26 2002//
+/sdl-events.ads/1.1.1.1/Fri Aug 30 01:12:33 2002//
+/sdl-joystick.ads/1.1.1.1/Fri Aug 30 01:12:36 2002//
+/sdl-keyboard.adb/1.1.1.1/Fri Aug 30 01:12:37 2002//
+/sdl-keyboard.ads/1.1.1.1/Fri Aug 30 01:12:39 2002//
+/sdl-keysym.ads/1.1.1.1/Fri Aug 30 01:12:44 2002//
+/sdl-mouse.adb/1.1.1.1/Fri Aug 30 01:12:46 2002//
+/sdl-mouse.ads/1.1.1.1/Fri Aug 30 01:12:49 2002//
+/sdl-mutex.adb/1.1.1.1/Fri Aug 30 01:12:50 2002//
+/sdl-mutex.ads/1.1.1.1/Fri Aug 30 01:12:52 2002//
+/sdl-quit.ads/1.1.1.1/Fri Aug 30 01:12:54 2002//
+/sdl-rwops.adb/1.1.1.1/Fri Aug 30 01:12:55 2002//
+/sdl-rwops.ads/1.1.1.1/Fri Aug 30 01:12:57 2002//
+/sdl-thread.ads/1.1.1.1/Fri Aug 30 01:13:00 2002//
+/sdl-timer.ads/1.1.1.1/Fri Aug 30 01:13:01 2002//
+/sdl-types.adb/1.1.1.1/Fri Aug 30 01:13:02 2002//
+/sdl-types.ads/1.1.1.1/Fri Aug 30 01:13:05 2002//
+/sdl-version.adb/1.1.1.1/Fri Aug 30 01:13:06 2002//
+/sdl-version.ads/1.1.1.1/Fri Aug 30 01:13:09 2002//
+/sdl-video.adb/1.1.1.1/Fri Aug 30 01:13:12 2002//
+/sdl-video.ads/1.1.1.1/Fri Aug 30 01:13:30 2002//
+/sdl.ads/1.1.1.1/Fri Aug 30 01:13:31 2002//
+/uintn_ptrops.ads/1.1.1.1/Fri Aug 30 01:13:32 2002//
+D/AdaTest////
+D/bind_check////
+D/ctest////

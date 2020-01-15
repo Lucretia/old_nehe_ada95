@@ -1,0 +1,4 @@
+Changed identifiers:
+
+  Posix "signal" function has a procedure equivalent in C_Lib named "Set_Signal"
+  Posix "raise" function is aliased to "Raise_Signal" and to the procedure Raise_The_Signal in C_Lib

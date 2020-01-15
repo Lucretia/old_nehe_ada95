@@ -1,0 +1,14 @@
+-- ----------------------------------------------------------------- --
+-- WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+-- ----------------------------------------------------------------- --
+-- SERIOUS WARNING: The Ada code in this files may, at some points,
+-- rely directly on pointer arithmetic which is considered very
+-- unsafe and PRONE TO ERROR. The AdaSDL_Framebuffer examples are
+-- more appropriate and easier to understand. They should be used in
+-- replacement of this files. Please go there.
+-- These files exist only for the sake of completness and to test
+-- AdaSDL without the dependency of AdaSDL_Framebuffer.
+-- ----------------------------------------------------------------- --
+-- WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+-- ----------------------------------------------------------------- --
+

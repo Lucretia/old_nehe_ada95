@@ -1,0 +1,5 @@
+#LIBS= -L/usr/lib -L/usr/local/lib ~/lib -Wl,-rpath,. -lSDL -lpthread -L/usr/lib -lGL -lGLU
+LIBS= -L/usr/lib -L/usr/local/lib -L~/lib  -lSDL -lpthread -lGL -lGLU
+GNATHTML=/usr/local/bin/gnathtml.pl
+PERL=/usr/bin/perl
+EXE=

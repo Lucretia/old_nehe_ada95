@@ -1,0 +1,10 @@
+Find the closest point on a plane demo by Luke A. Guest
+
+To compile this code, go to the <top>/build/ directory and type:
+
+gnatmake -Pclosest_point_on_plane.gpr -XBUILD=release -XPLATFORM=linux
+
+BUILD can be either "release" or "debug"
+PLATFORM can be either "linux" or "win32"
+
+<top> is the top level directory that the Ada OpenGL example code is installed in.

@@ -1,0 +1,70 @@
+---------------------------------------------------------------------------------
+-- Copyright 2004-2007 © Luke A. Guest
+--
+-- This code is to be used for tutorial purposes only.
+-- You may not redistribute this code in any form without my express permission.
+---------------------------------------------------------------------------------
+project Rotations is
+
+  type Build_Type is ("release", "debug");
+  type Platform_Type is ("linux", "win32");
+  
+  Build    : Build_Type    := external("BUILD", "debug");
+  Platform : Platform_Type := external("PLATFORM", "linux");
+  
+  for Source_Dirs use
+    ("../../rotations/",
+     "../../adagl/" & Platform,
+     "../../utils/",
+     "../../thirdparty/adasdl/thin/adasdl/AdaSDL/binding/");
+
+  for Source_Files use
+    ("rotations.adb",
+     "example.adb",
+
+     "gl.ads",
+     "glu.ads",
+     
+     "glutils.adb",
+
+     "sdl.ads",
+     "sdl-video.adb",
+     "sdl-active.ads",
+     "sdl-events.adb",
+     "sdl-keyboard.adb",
+     "sdl-keysym.ads",
+     "sdl-timer.ads",
+     "sdl-types.adb",
+     "sdl-mutex.adb",
+     "sdl-rwops.adb",
+     "sdl-joystick.ads",
+     "sdl-mouse.adb",
+     "uintn_ptrops.ads",
+     "lib_c.ads");
+    
+  for Object_Dir use "./" & Platform & "/" & Build;
+  
+  for Exec_Dir use "./" & Platform & "/" & Build;
+  
+  for Main use ("rotations");
+
+  package Compiler is
+    case Build is
+      when "debug" =>
+        for Default_Switches("Ada") use
+          ("-gnata",
+           "-gnato",
+           "-gnatE",
+           "-g");
+           
+      when "release" =>
+        for Default_Switches("Ada") use
+          ("-O2");
+    end case;
+  end Compiler;
+
+  package Builder is
+    for Executable ("rotations.adb") use "rotations";
+  end Builder;
+
+end Rotations;

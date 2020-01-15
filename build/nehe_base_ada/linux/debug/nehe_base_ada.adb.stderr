@@ -1,0 +1,20 @@
+Using built-in specs.
+COLLECT_GCC=/home/laguest/opt/free-ada-6.4.0/bin/gcc
+Target: x86_64-pc-linux-gnu
+Configured with: /home/laguest/src/mine/free-ada/source/gcc-6.4.0/configure --prefix=/home/laguest/opt/free-ada-6.4.0 --target=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --enable-multilib --enable-threads=posix --enable-libgomp --with-libffi --enable-libsanitizer --disable-nls --with-gnu-as --with-gnu-ld --enable-languages=c,c++,objc,obj-c++,ada --with-system-zlib --without-libiconv-prefix --disable-libmudflap --disable-libstdcxx-pch --enable-lto --disable-isl-version-check --disable-ppl-version-check --with-gmp=/home/laguest/opt/free-ada-6.4.0 --with-mpfr=/home/laguest/opt/free-ada-6.4.0 --with-mpc=/home/laguest/opt/free-ada-6.4.0 --with-isl=/home/laguest/opt/free-ada-6.4.0
+Thread model: posix
+gcc version 6.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-c' '-gnatA' '-gnata' '-gnato' '-gnatE' '-v' '-g' '-gnatec=/tmp/GNAT-TEMP-000003.TMP' '-gnatem=/tmp/GNAT-TEMP-000004.TMP' '-mtune=generic' '-march=x86-64'
+ /home/laguest/opt/free-ada-6.4.0/libexec/gcc/x86_64-pc-linux-gnu/6.4.0/gnat1 -quiet -dumpbase nehe_base_ada.adb -auxbase nehe_base_ada -gnatA -gnata -gnato -gnatE -g -gnatec=/tmp/GNAT-TEMP-000003.TMP -gnatem=/tmp/GNAT-TEMP-000004.TMP -mtune=generic -march=x86-64 /home/laguest/src/mine/ada_gl_tutorials/trunk/nehe_base_ada/nehe_base_ada.adb -o /tmp/ccITdCAk.s
+nehe_base_ada.adb:11:06: "Nehe_Base_Ada (body)" depends on "Sdl.Types (body)"
+nehe_base_ada.adb:11:06: "Sdl.Types (body)" depends on "Sdl.Types (spec)"
+nehe_base_ada.adb:11:06: file "sdl-types.ads" not found
+nehe_base_ada.adb:12:06: "Nehe_Base_Ada (body)" depends on "Sdl.Keyboard (body)"
+nehe_base_ada.adb:12:06: "Sdl.Keyboard (body)" depends on "Sdl.Keyboard (spec)"
+nehe_base_ada.adb:12:06: file "sdl-keyboard.ads" not found
+nehe_base_ada.adb:14:06: "Nehe_Base_Ada (body)" depends on "Sdl.Video (body)"
+nehe_base_ada.adb:14:06: "Sdl.Video (body)" depends on "Sdl.Video (spec)"
+nehe_base_ada.adb:14:06: file "sdl-video.ads" not found
+nehe_base_ada.adb:15:06: "Nehe_Base_Ada (body)" depends on "Sdl.Events (body)"
+nehe_base_ada.adb:15:06: "Sdl.Events (body)" depends on "Sdl.Events (spec)"
+nehe_base_ada.adb:15:06: file "sdl-events.ads" not found

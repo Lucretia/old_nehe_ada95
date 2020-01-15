@@ -1,0 +1,7 @@
+
+---- I will need to use a package equivalent to SDL_main.h with a function 
+     int SDL_RegisterApp(char *name, Uint32 style, void *hInst);
+
+--  An equivalent to SDL.Error.SetError  but with a parameter of type "String"
+--  To create an SDL.Error.GetError funcion that returns the type "String"
+--  Replace al occurrencies of Void_ptr by System.Address
